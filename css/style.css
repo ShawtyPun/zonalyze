@@ -268,7 +268,10 @@ div.container6 {
 div.container6 p {
   margin: 0 }
 
+body.back{
+  background-image: url(images/01.png);
 
+}
 
 
 
