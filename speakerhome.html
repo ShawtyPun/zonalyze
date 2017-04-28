@@ -19,6 +19,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/business-casual.css" rel="stylesheet">
+    <link href="css/stylespeakerhome.css" rel="stylesheet">
 
     <!-- Temporary navbar container fix -->
     
@@ -69,6 +70,9 @@
                     <li class="nav-item px-lg-4">
                         <a class="nav-link text-uppercase text-expanded" href="#">Contact</a>
                     </li>
+                    <li class="nav-item px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" href="index.html">Logout</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -82,14 +86,112 @@
               <thead>
                 <tr> <align>
                   <th>#</th>
-                  <th>Subjects <a href="default.asp"> <img src="images/add-circular-button.png" alt="Add Subjects" align="right" border:0"> </a> 
-                    <div class="popup" onclick="myFunction()">Click me!
-                    <span class="popuptext" id="myPopup">Popup text...</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  <th>Subjects
+                      
+
+                     
+
+
+
+                  </th>
+
+
+
+
+
+
+
+
+
+
+
+
+                  <th>Material
+
+
+                      <img id="myImg" src="images/add-circular-button.png" alt="Add Subjects" align="right" border:0">
+
+                      <!-- The Modal -->
+                      <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <form>
+                          <div class="form-group">
+                            <label for="exampleTextarea">Description or note</label>
+                            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputFile">File input</label>
+                            <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                            
+                          </div>
+                          <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>>
+                        
+                      </div>
+
+                      <script>
+                      // Get the modal
+                      var modal = document.getElementById('myModal');
+
+                      // Get the image and insert it inside the modal - use its "alt" text as a caption
+                      var img = document.getElementById('myImg');
+                      var modalImg = document.getElementById("img01");
+                      var captionText = document.getElementById("caption");
+                      img.onclick = function(){
+                          modal.style.display = "block";
+                          modalImg.src = this.src;
+                          captionText.innerHTML = this.alt;
+                      }
+
+                      // Get the <span> element that closes the modal
+                      var span = document.getElementsByClassName("close")[0];
+
+                      // When the user clicks on <span> (x), close the modal
+                      span.onclick = function() { 
+                          modal.style.display = "none";
+                      }
+                      </script>
+
+                   </a> 
+
+
                     </div>
                   </th>
 
-                  <th>Materials <a href="default.asp"> <img src="images/add-circular-button.png" alt="Add Subjects" align="right" border:0"> </a> </th>
-                  <th>Action</th>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  <th><p align="center">Action</p></th>
                   
                 </tr>
               </thead>
@@ -114,7 +216,7 @@
 
                   </td>
                   <td>
-                    <button type="button" class="btn btn-outline-primary ">Start Live</button>
+                    <button type="button" class="btn btn-outline-primary "><a href="live.html">Start Live</a></button>
                     <button type="button" class="btn btn-outline-info">Download</button>
                     <button type="button" class="btn btn-outline-danger">Delete</button>
                   </td>
@@ -138,7 +240,7 @@
                           <option>slide5.pptx</option>
                       </select>
                   </td>
-                  <td><button type="button" class="btn btn-outline-primary ">Start Live</button>
+                  <td><button type="button" class="btn btn-outline-primary "><a href="live.html">Start Live</a></button>
                     <button type="button" class="btn btn-outline-info">Download</button>
                     <button type="button" class="btn btn-outline-danger">Delete</button></td>
                 </tr>
@@ -158,7 +260,7 @@
                           <option>slide5.pptx</option>
                       </select>
                   </td>
-                  <td><button type="button" class="btn btn-outline-primary ">Start Live</button>
+                  <td><button type="button" class="btn btn-outline-primary" ><a href="live.html">Start Live</a></button>
                     <button type="button" class="btn btn-outline-info">Download</button>
                     <button type="button" class="btn btn-outline-danger">Delete</button></td>
                 </tr>
