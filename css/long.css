@@ -15,9 +15,10 @@ html {
 a {
     width: 20%;
     height: 12%;
-    font-size: 45px;
+    font-size: 4vmax;
+    word-wrap: break-word;
     margin: auto;
-    line-height: 100px;
+    line-height: 180%;
     text-decoration: none;
     position: absolute;
     top: 0;
@@ -40,9 +41,9 @@ a {
 a.left {
     width: 20%;
     height: 12%;
-    font-size: 45px;
+    font-size: 4vmax;
     margin: auto;
-    line-height: 100px;
+    line-height: 180%;
     text-decoration: none;
     position: absolute;
     top: 0;
@@ -75,6 +76,7 @@ a:before {
     transition: all 500ms;
     z-index: -1;
 }
+
 
 a:after {
     bottom: 0px;
